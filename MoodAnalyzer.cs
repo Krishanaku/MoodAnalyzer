@@ -9,10 +9,9 @@ namespace MoodAnalyzer
     public  class MoodAnalys
     {
         
-        public string  CheckMoodAnalyzer() 
+        public string  CheckMoodAnalyzer(string mood) 
         {
-            Console.WriteLine("Enter Happy or Sad to check through MoodAnalyzer");
-            string mood = Console.ReadLine();
+            
             if (mood == "Happy" || mood == "happy" ) 
             {
                 return "Happy";
