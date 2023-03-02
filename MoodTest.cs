@@ -10,9 +10,9 @@ namespace TestProject1
         {
             //Arrange
 
-            string s1 = "Sad";
+            string s1 = "Happy";
             MoodAnalys m1 = new MoodAnalys();
-            string expectedOutput = "Sad";
+            string expectedOutput = "Happy";
 
             //Act
             string actualOutput = m1.CheckMoodAnalyzer(s1);
