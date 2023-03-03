@@ -8,10 +8,16 @@ namespace MoodAnalyserDemo
 {
     public class MoodAnalyser
     {
-        string mood;
         public MoodAnalyser()
         {
-            Console.WriteLine("Default Constructor");
+
         }
+
+
+        /*   public string Checkmood(string s1)
+           {
+               return s1;
+           }
+        */
     }
 }

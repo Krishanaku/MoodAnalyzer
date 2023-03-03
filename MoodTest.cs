@@ -9,17 +9,17 @@ namespace TestProject1
         [TestMethod]
         public void MoodAnalyser_Success()
         {
-            //Arrange
-            string s1 = "";
-            MoodAnalyser m1 = new MoodAnalyser();
-            string expectedOutput = "HAPPY";
 
-            //Act
-            string actualOutput = m1.Fun(s1);
+            //Arrange
+            MoodAnalyser m1 = new MoodAnalyser();
+            MoodAnalyser m2 = new MoodAnalyser();
+            object expectedOutput = "Object are Different";
+
+            //Act 
+            object actualOutput = m1.Equals(m2);
 
             //Assert
             Assert.AreEqual(expectedOutput, actualOutput);
-
 
         }
     }
