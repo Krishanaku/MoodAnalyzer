@@ -1,3 +1,4 @@
+using MoodAnalyserDemo;
 using MoodAnalyzer;
 
 namespace TestProject1
@@ -8,16 +9,16 @@ namespace TestProject1
         [TestMethod]
         public void MoodAnalyser_Success()
         {
-            // Arrange
-            //MoodAnalyser m1 = new MoodAnalyser("happy");
-            MoodAnalyser m1 = new MoodAnalyser("Sad");
+            //Arrange
+            string s1 = "";
+            MoodAnalyser m1 = new MoodAnalyser();
+            string expectedOutput = "HAPPY";
 
-            // Act
-            var result = m1.mood();
+            //Act
+            string actualOutput = m1.Fun(s1);
 
-            // Assert
-            Assert.AreEqual("Sad", result);
-
+            //Assert
+            Assert.AreEqual(expectedOutput, actualOutput);
 
 
         }
