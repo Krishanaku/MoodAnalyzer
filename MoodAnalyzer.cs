@@ -32,8 +32,6 @@ namespace MoodAnalyserDemo
                 return mood;
             }
         }
-
-
     }
 
 
