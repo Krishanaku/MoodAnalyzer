@@ -1,28 +1,41 @@
 ﻿using System;
 using System.Collections.Generic;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MoodAnalyzer
+namespace MoodAnalyserDemo
 {
-    public  class MoodAnalyser
+    public class MoodAnalyser
     {
-        public string n;
-        public MoodAnalyser(string name)
+        public string Fun(string mood)
         {
-            this.n = name;
-            Console.WriteLine(n);
+            try
+            {
+                if (mood == "Happy")
+                {
+                    return "HAPPY";
+                }
+                else if (mood == "Sad")
+                {
+                    return "SAD";
+                }
+                else if (mood == "")
+                {
+                    return "HAPPY";
+                }
+                else
+                {
+                    throw new Exception();
+                }
+            }
+            catch (Exception ex)
+            {
+                return ex.ToString();
+            }
         }
-
-        public string mood()
-        {
-            return this.n;
-        }
-
-
-
-
-
     }
 }
+
